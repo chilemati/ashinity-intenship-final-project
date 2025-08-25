@@ -2,11 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { heroSvg } from "@/dynamicSvgs/hero";
 import { useSwipeable } from "react-swipeable"; // 👈 new import
-
-import jsonData from "@data/hero.json";
 import { heroSlides } from "@/utils/slidesData";
-
-const hero = jsonData.hero;
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
