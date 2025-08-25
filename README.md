@@ -36,6 +36,6 @@ The app is designed with clean UI/UX, optimized performance, and scalable archit
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/chilemati/ashinity-intenship-final-project.git
+cd ashinity-intenship-final-project
 npm install
