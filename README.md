@@ -1,69 +1,41 @@
-# React + TypeScript + Vite
+# 🛒 Full E-Commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my **Ashinity Internship Final Project**, an e-commerce web application built with **React, TypeScript, and Vite**.  
+The project implements a modern shopping experience inspired by a [Figma community design](https://www.figma.com/design/T8wi5XpDx1Zso0c5wuVRhF/Full-E-Commerce-Website-UI-UX-Design--Community-?node-id=34-213&t=JesBGGS9OfcTnbPS-0).  
 
-Currently, two official plugins are available:
+The app is designed with clean UI/UX, optimized performance, and scalable architecture suitable for real-world e-commerce platforms.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend Framework:** [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)  
+- **Bundler / Dev Server:** [Vite](https://vitejs.dev/)  
+- **Styling:** TailwindCSS (with custom components and utilities)  
+- **Icons & UI:** Lucide Icons / Custom SVGs  
+- **Linting & Code Quality:** ESLint + Prettier  
+- **State Management:** (to be added – e.g., Redux Toolkit, Zustand, or Context API)  
+- **Backend / API:** (optional – if connected to a backend later)  
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📌 Features (Planned & Implemented)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🏠 **Landing Page** – modern homepage showcasing featured products  
+- 🛍️ **Product Listings** – category-based browsing with filters  
+- 🔍 **Search & Filters** – dynamic search and filtering options  
+- 🛒 **Cart & Checkout Flow** – add to cart, manage cart items, checkout process  
+- 👤 **User Authentication** – login, signup, and profile management (planned)  
+- 💳 **Payment Integration** – placeholder for payment gateway integration (planned)  
+- 📱 **Responsive Design** – optimized for desktop, tablet, and mobile  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Project Setup
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
