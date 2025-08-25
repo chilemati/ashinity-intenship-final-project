@@ -1,0 +1,54 @@
+{
+  "hero": {
+    
+  "sidenav": [
+    {
+      "title": "Woman’s Fashion",
+      "hasChildren": true,
+      "children": [
+        { "title": "Clothing", "hasChildren": false },
+        { "title": "Shoes", "hasChildren": false },
+        { "title": "Accessories", "hasChildren": false }
+      ]
+    },
+    {
+      "title": "Men’s Fashion",
+      "hasChildren": true,
+      "children": [
+        { "title": "Clothing", "hasChildren": false },
+        { "title": "Shoes", "hasChildren": false },
+        { "title": "Accessories", "hasChildren": false }
+      ]
+    },
+    {
+      "title": "Electronics",
+      "hasChildren": false
+    },
+    {
+      "title": "Home & Lifestyle",
+      "hasChildren": false
+    },
+    {
+      "title": "Medicine",
+      "hasChildren": false
+    },
+    {
+      "title": "Sports & Outdoor",
+      "hasChildren": false
+    },
+    {
+      "title": "Baby’s & Toys",
+      "hasChildren": false
+    },
+    {
+      "title": "Groceries & Pets",
+      "hasChildren": false
+    },
+    {
+      "title": "Health & Beauty",
+      "hasChildren": false
+    }
+  ]
+
+  }
+}

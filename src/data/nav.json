@@ -1,0 +1,56 @@
+{
+    "nav": [
+        {
+            "name": "Home",
+            "path": "/"
+        },
+        {
+            "name": "Contact",
+            "path": "/contact"
+        },
+        {
+            "name": "About",
+            "path": "/e-commerce/about"
+        },
+        {
+            "name": "Signup",
+            "path": "/signup"
+        }
+       
+       
+       
+    ],
+    "topnav": {
+        "p": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!",
+        "link":{
+            "text": "Shop Now",
+            "to": "/"
+        },
+        "languages": [
+                "Eng",
+                "Fr"
+            ]
+    },
+    "dropdown": [
+    {
+      "icon": "/svg/user2.svg",
+      "text": "Manage My Account"
+    },
+    {
+      "icon": "/svg/mailbag.svg",
+      "text": "My Order"
+    },
+    {
+      "icon": "/svg/cancel.svg",
+      "text": "My Cancellations"
+    },
+    {
+      "icon": "/svg/star.svg",
+      "text": "My Reviews"
+    },
+    {
+      "icon": "/svg/logout.svg",
+      "text": "Logout"
+    }
+  ]
+}
