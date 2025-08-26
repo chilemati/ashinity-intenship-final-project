@@ -1,0 +1,365 @@
+{
+    "products": [
+    {
+        "section": "flash sales",
+        "id": 1,
+        "name": "HAVIT HV-G92 Gamepad",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206925/exclusive/5d5c2e5250752d55f8b60f2aa2923183dadbc135_sw5ydu.png",
+        "price":"$120",
+        "oldPrice":"$160",
+        "discount":"40%",
+        "rating":5.0,
+        "ratingCount": 88,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "flash sales",
+        "id": 2,
+        "name": "AK-900 Wired Keyboard",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206922/exclusive/e59d9f348cc24eeff489863523b63971c3ff8e4a_sm6vlw.png",
+        "price":"$960",
+        "oldPrice":"$1160",
+        "discount":"35%",
+        "rating":4.0,
+        "ratingCount": 75,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "flash sales",
+        "id": 3,
+        "name": "IPS LCD Gaming Monitor ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206923/exclusive/5e634682db5174aff99bb9337d2dc9598a0b44e4_wztgwb.png",
+        "price":"$370",
+        "oldPrice":"$400",
+        "discount":"30%",
+        "rating":5.0,
+        "ratingCount": 99,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "flash sales",
+        "id": 4,
+        "name": "S-Series Comfort Chair ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206923/exclusive/5e634682db5174aff99bb9337d2dc9598a0b44e4_wztgwb.png",
+        "price":"$370",
+        "oldPrice":"$400",
+        "discount":"25%",
+        "rating":5.0,
+        "ratingCount": 99,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "Best Selling Products",
+        "id": 5,
+        "name": "The north coat ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206935/exclusive/ee9a38001e9f94261b28e16ea21bacb4144473e8_wivk5r.png",
+        "price":"$370",
+        "oldPrice":"$400",
+        "discount":"0%",
+        "rating":5.0,
+        "ratingCount": 65,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "Best Selling Products",
+        "id": 6,
+        "name": "Gucci duffle bag ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206935/exclusive/4f3ca1d12722dbdf98f25179d3c0b785988c513d_eyixfr.png",
+        "price":"$960",
+        "oldPrice":"$1160",
+        "discount":"0%",
+        "rating":5.0,
+        "ratingCount": 65,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "Best Selling Products",
+        "id": 7,
+        "name": "RGB liquid CPU Cooler ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206930/exclusive/6739d39dc218c97b645d616c8188a4f2e6aaf84b_s38dyq.png",
+        "price":"$160",
+        "oldPrice":"$170",
+        "discount":"0%",
+        "rating":5.0,
+        "ratingCount": 65,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "Best Selling Products",
+        "id": 8,
+        "name": "Small BookSelf ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206934/exclusive/e86f6e872757d20a14861e2e0ebd4e9889693f59_ofzz74.png",
+        "price":"$360",
+        "oldPrice":"$0",
+        "discount":"0%",
+        "rating":5.0,
+        "ratingCount": 65,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "Explore Our Products",
+        "id": 9,
+        "name": "Breed Dry Dog Food ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206934/exclusive/78e727118c99fe72271cf43f5e3566b39ca7c8f4_oekbrx.jpg",
+        "price":"$100",
+        "oldPrice":"$0",
+        "discount":"0%",
+        "rating":3.0,
+        "ratingCount": 35,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "Explore Our Products",
+        "id": 10,
+        "name": "Breed Dry Dog Food ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206937/exclusive/e60892a4f0a3d5d144dce622c7338ec5be12908f_d53jg7.png",
+        "price":"$360",
+        "oldPrice":"$0",
+        "discount":"0%",
+        "rating":4.0,
+        "ratingCount": 95,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "Explore Our Products",
+        "id": 11,
+        "name": "ASUS FHD Gaming Laptop ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206936/exclusive/203be522b7b02d10672f6f6147762cf52bfcfc54_i6d0pg.png",
+        "price":"$700",
+        "oldPrice":"$0",
+        "discount":"0%",
+        "rating":5.0,
+        "ratingCount": 325,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "Explore Our Products",
+        "id": 12,
+        "name": "Curology Product Set  ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206936/exclusive/e7bdd11662ea1dfc2d615a5bb054e139a764f306_h2w6y7.png",
+        "price":"$500",
+        "oldPrice":"$0",
+        "discount":"0%",
+        "rating":4.0,
+        "ratingCount": 145,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "Explore Our Products",
+        "id": 13,
+        "name": "Kids Electric Car ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206941/exclusive/5f4ea9acf805319ddf3897fc9daaf58559542260_pcunl3.png",
+        "price":"$960",
+        "oldPrice":"$0",
+        "discount":"New",
+        "rating":5.0,
+        "ratingCount": 65,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "Explore Our Products",
+        "id": 14,
+        "name": "Jr. Zoom Soccer Cleats ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206941/exclusive/d0b7bb25884f6fdfc1357634d7d7b09e05755c2f_ap3uge.png",
+        "price":"$1160",
+        "oldPrice":"$0",
+        "discount":"New",
+        "rating":5.0,
+        "ratingCount": 35,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "Explore Our Products",
+        "id": 15,
+        "name": "GP11 Shooter USB Gamepad ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206939/exclusive/288e013365fe639fccc1fe4168fca740ef1f85e7_qbmjqf.png",
+        "price":"$660",
+        "oldPrice":"$0",
+        "discount":"New",
+        "rating":4.5,
+        "ratingCount": 55,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "Explore Our Products",
+        "id": 16,
+        "name": "Quilted Satin Jacket ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206942/exclusive/04a1915fd6cedd7c8b1073685c5f1be1b50e1ac6_zh8yfc.png",
+        "price":"$660",
+        "oldPrice":"$0",
+        "discount":"New",
+        "rating":4.5,
+        "ratingCount": 55,
+        "discription": "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "New Arrival",
+        "id": 17,
+        "name": "PlayStation 5 ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206919/exclusive/img3_rcgt9p.png",
+        "price":"$660",
+        "oldPrice":"$0",
+        "discount":"New",
+        "rating":4.5,
+        "ratingCount": 55,
+        "discription": "Black and White version of the PS5 coming out on sale.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "New Arrival",
+        "id": 18,
+        "name": "Women’s Collections ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206919/exclusive/img3_rcgt9p.png",
+        "price":"$660",
+        "oldPrice":"$0",
+        "discount":"New",
+        "rating":4.5,
+        "ratingCount": 55,
+        "discription": "Featured woman collections that give you another vibe.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "New Arrival",
+        "id": 19,
+        "name": "Speakers ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206921/exclusive/img4_dhr8ft.png",
+        "price":"$660",
+        "oldPrice":"$0",
+        "discount":"New",
+        "rating":4.5,
+        "ratingCount": 55,
+        "discription": "Featured woman collections that give you another vibe.",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    },
+    {
+        "section": "New Arrival",
+        "id": 20,
+        "name": "Perfume ",
+        "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206927/exclusive/img5_x0yvp1.png",
+        "price":"$660",
+        "oldPrice":"$0",
+        "discount":"New",
+        "rating":4.5,
+        "ratingCount": 55,
+        "discription": "GUCCI INTENSE OUD EDP",
+        "otherImgs": [
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756211243/exclusive/image_57_tipxiy.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/bdcffcaa9b23a76cbe02748d2090a0b9a11cf0a5_hgge7n.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/ca92325b4d31381f7fe4841786f4511bd4849d87_epmrox.png",
+            "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206987/exclusive/f109e9cea445f7c73ec2a2153e0e149e85ee9d28_ikymdz.png"
+        ]
+    }
+    
+]
+}

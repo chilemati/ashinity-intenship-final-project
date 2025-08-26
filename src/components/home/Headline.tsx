@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import TransparentSelect from "./TransparentSelect";
+import TransparentSelect from "../TransparentSelect";
 import jsonData from "@data/nav.json";
 const headline = jsonData.topnav;
 import AutoScroll from "@/components/AutoScroll"

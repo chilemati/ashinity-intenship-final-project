@@ -1,5 +1,7 @@
-import Headline from "@/components/Headline"
-import HeroLayout from "@/components/HeroLayout"
+import Categories from "@/components/home/Categories"
+import Flashsales from "@/components/home/Flashsales"
+import Headline from "@/components/home/Headline"
+import HeroLayout from "@/components/home/HeroLayout"
 import Navber from "@/components/Navber"
 
 const Home = () => {
@@ -8,6 +10,8 @@ const Home = () => {
       <Headline />
       <Navber />
       <HeroLayout />
+      <Flashsales />
+      <Categories />
 
     </div>
   )

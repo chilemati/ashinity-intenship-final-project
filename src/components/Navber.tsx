@@ -62,9 +62,9 @@ const Navber = () => {
             <button className="text-black"> {navSvg.heart} </button>
             <button className="text-black relative">
               {navSvg.cart}
-              <button className="flexCenter h-4 w-4 rounded-full absolute top-[-4px] right-[-4px] bg-[#DB4444] text-white font-poppins text-[12px]">
+              <span className="flexCenter h-4 w-4 rounded-full absolute top-[-4px] right-[-4px] bg-[#DB4444] text-white font-poppins text-[12px]">
                 0
-              </button>
+              </span>
             </button>
 
             {/* user */}

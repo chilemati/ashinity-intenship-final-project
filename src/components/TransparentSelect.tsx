@@ -9,7 +9,7 @@ const TransparentSelect = ({data}:p) => {
       >
         {
             data.map((each:any)=>(
-                <option className="bg-gray-900  font-inter font-normal text-[13px] text-white"> {each} </option>
+                <option key={each} className="bg-gray-900  font-inter font-normal text-[13px] text-white"> {each} </option>
 
             ))
         }

@@ -25,7 +25,7 @@ const SideNav = () => {
 
   return (
     <div
-      className="p-4 h-fit max-h-[344px] overflow-y-clip  bg-white l"
+      className="p-4 h-fit min-h-[344px] overflow-y-clip border-r-[0.5px] border-r-black  bg-white l"
       style={{
         width: "217px",
         gap: "16px",

@@ -45,7 +45,7 @@ const Hero = () => {
         onMouseLeave={() => setIsPaused(false)}
       >
         {/* container */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_496px] pt-[72.5px] ps-[64px] ">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_80%] pt-[72.5px] ps-[64px] ">
           {/* left */}
           <div>
             <div>{showing.content}</div>

@@ -8,7 +8,7 @@ interface Slide {
 
 export const heroSlides: Slide[] = [
   {
-    img: "/jpg/img1.jpg",
+    img: "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206918/exclusive/img1_rrawtz.jpg",
     content: (
       <div>
         <div className="flex items-center min-h-[40px] ">
@@ -29,7 +29,7 @@ export const heroSlides: Slide[] = [
     ),
   },
   {
-    img: "/png/img2.png",
+    img: "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206919/exclusive/img3_rcgt9p.png",
     content: (
       <div>
         <div className="flex items-center min-h-[40px] ">
@@ -42,7 +42,7 @@ export const heroSlides: Slide[] = [
     ),
   },
   {
-    img: "/png/img3.png",
+    img: "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206921/exclusive/img4_dhr8ft.png",
     content: (
       <div>
         <div className="flex items-center min-h-[40px] ">
@@ -55,7 +55,7 @@ export const heroSlides: Slide[] = [
     ),
   },
   {
-    img: "/png/img4.png",
+    img: "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206923/exclusive/5e634682db5174aff99bb9337d2dc9598a0b44e4_wztgwb.png",
     content: (
       <div>
         <div className="flex items-center min-h-[40px] ">
@@ -68,7 +68,7 @@ export const heroSlides: Slide[] = [
     ),
   },
   {
-    img: "/png/img5.png",
+    img: "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206927/exclusive/img5_x0yvp1.png",
     content: (
       <div>
         <div className="flex items-center min-h-[40px] ">
