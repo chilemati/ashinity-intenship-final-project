@@ -55,7 +55,7 @@ const Flashsales = () => {
   if (status === "loading" && products.length === 0) return <p>Loading…</p>;
 
   return (
-    <div className="mt-[140px] w-[95%] lg:w-[80%] mx-auto border-b-[0.5px] border-b-black ">
+    <div className="mt-[140px] w-[95%] lg:w-[90%] mx-auto border-b-[0.5px] border-b-black ">
       {/* title */}
       <div className="flexStart gap-[10px] ">
         <div className="w-[20px] h-[40px] rounded-[4px] bg-[#DB4444] "></div>

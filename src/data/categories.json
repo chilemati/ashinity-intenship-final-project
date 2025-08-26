@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Phones",
+            "image": "phone"
+        },
+        {
+            "id": 2,
+            "name": "Computers",
+            "image": "computer"
+        },
+        {
+            "id": 3,
+            "name": "SmartWatch",
+            "image": "watch"
+        },
+        {
+            "id": 4,
+            "name": "Camera",
+            "image": "camera"
+        },
+        {
+            "id": 5,
+            "name": "HeadPhones",
+            "image": "headphone"
+        }
+        ,
+        {
+            "id": 6,
+            "name": "Gaming",
+            "image": "gamepad"
+        }
+    ]
+}
