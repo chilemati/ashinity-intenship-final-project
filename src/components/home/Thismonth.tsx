@@ -12,7 +12,6 @@ import useRatings from "@/hooks/useRatings";
 import {
   addToCart,
   toggleWishlist,
-  selectIsWishlisted,
 } from "@/store/cartSlice";
 import { Link } from "react-router-dom";
 
