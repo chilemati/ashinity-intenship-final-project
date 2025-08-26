@@ -1,24 +1,21 @@
+import { heroCatSlides } from "@/utils/heroCatSlide";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { heroSvg } from "@/dynamicSvgs/hero";
 import { useSwipeable } from "react-swipeable"; // 👈 new import
-import { heroSlides } from "@/utils/slidesData";
 
-const Hero = () => {
+const HeroCategory = () => {
   const [index, setIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const showing = heroSlides[index];
+  const showing = heroCatSlides[index];
 
   // handle navigation
   const nextSlide = () => {
-    setIndex((prev) => (prev < heroSlides.length - 1 ? prev + 1 : 0));
+    setIndex((prev) => (prev < heroCatSlides.length - 1 ? prev + 1 : 0));
   };
   const prevSlide = () => {
-    setIndex((prev) => (prev > 0 ? prev - 1 : heroSlides.length - 1));
+    setIndex((prev) => (prev > 0 ? prev - 1 : heroCatSlides.length - 1));
   };
-  const goToSlide = (i: number) => {
-    setIndex(i);
-  };
+ 
 
   // auto switch slides
   useEffect(() => {
@@ -40,26 +37,25 @@ const Hero = () => {
     <>
       <div
         {...handlers} // 👈 attach swipe gestures here
-        className="w-full relative min-h-[344px]] bg-black"
+        className="w-full md:w-[90%] mx-auto relative min-h-[500px] mt-[140px] bg-black"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
         {/* container */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_80%] pt-[72.5px] ps-4 md:ps-[64px] ">
+        <div className="w-fit gap-4 md:gap-0 grid grid-cols-1 lg:grid-cols-[1fr_1fr] py-[69px]  ps-4 lg:ps-[64px] ">
           {/* left */}
-          <div>
+          <div className="order-2 md:order-1 " >
             <div>{showing.content}</div>
-            <Link to="#" className="flexStart mt-[22px] ">
+            <Link to="#" className="flexStart mt-[40px] py-4 px-[48px] w-fit bg-[#00FF66] rounded ">
               <span className="me-2 text-[#FAFAFA] text-base font-poppins font-[500] ">
-                Shop Now
+               Buy Now
               </span>
-              <span className="text-[#FAFAFA]"> {heroSvg.arrow2} </span>
             </Link>
           </div>
           {/* right */}
-          <div className="relative">
+          <div className="relative order-1 md:order-2">
             <img
-              className="h-[352px] object-cover "
+              className="h-[352px] w-full object-cover "
               loading="lazy"
               src={showing.img}
               alt="a slide image"
@@ -67,23 +63,10 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* pagination dots */}
-        <div className="absolute bottom-[12px] left-1/2 -translate-x-1/2 flex gap-3 z-20">
-          {heroSlides.map((_: any, i: number) => (
-            <button
-              key={i}
-              onClick={() => goToSlide(i)}
-              className={`w-3 h-3 rounded-full ${
-                i === index
-                  ? "bg-[#DB4444] border-[2px] border-white "
-                  : "bg-[#9A9CAA]"
-              }`}
-            ></button>
-          ))}
-        </div>
+       
       </div>
     </>
   );
 };
 
-export default Hero;
+export default HeroCategory;

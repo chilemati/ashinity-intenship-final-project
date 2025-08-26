@@ -3,6 +3,7 @@ import Flashsales from "@/components/home/Flashsales"
 import Headline from "@/components/home/Headline"
 import HeroLayout from "@/components/home/HeroLayout"
 import Thismonth from "@/components/home/Thismonth"
+import HeroCategory from "@/components/home/HeroCategory"
 import Navber from "@/components/Navber"
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Flashsales />
       <Categories />
       <Thismonth />
+      <HeroCategory />
 
     </div>
   )
