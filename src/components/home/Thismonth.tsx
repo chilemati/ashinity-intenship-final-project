@@ -137,7 +137,7 @@ const Thismonth = () => {
               <div className="mt-[30px]">
                 <h2 className="text-xl font-semibold">{p.name}</h2>
                 <div className="flex items-center gap-2 mt-1">
-                  <span className="text-lg font-bold text-black">
+                  <span className="text-lg font-bold text-[#DB4444] ">
                     {p.price}
                   </span>
                   {p.oldPrice !== "$0" && (

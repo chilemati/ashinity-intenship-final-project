@@ -15,6 +15,7 @@ export type Product = {
   ratingCount: number;
   discription: string;
   otherImgs: string[];
+  colors: string[];
 };
 
 // Helpers

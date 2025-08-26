@@ -5,6 +5,7 @@ import HeroLayout from "@/components/home/HeroLayout"
 import Thismonth from "@/components/home/Thismonth"
 import HeroCategory from "@/components/home/HeroCategory"
 import Navber from "@/components/Navber"
+import OurProducts from "@/components/home/OurProducts"
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Categories />
       <Thismonth />
       <HeroCategory />
+      <OurProducts />
 
     </div>
   )

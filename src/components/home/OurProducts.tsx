@@ -1,5 +1,4 @@
 import { heroSvg } from "@/dynamicSvgs/hero";
-import CountdownTimer from "./CountdownTimer";
 import { useEffect, useState, useRef } from "react";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import {
@@ -11,15 +10,14 @@ import { Eye, Heart } from "lucide-react";
 import useRatings from "@/hooks/useRatings";
 
 // ✅ import cart + wishlist actions/selectors
-import {
-  addToCart,
-  toggleWishlist,
-} from "@/store/cartSlice";
+import { addToCart, toggleWishlist } from "@/store/cartSlice";
 import { Link } from "react-router-dom";
 
-const Flashsales = () => {
+const OurProducts = () => {
   const dispatch = useAppDispatch();
-  const products = useAppSelector(selectProductsBySection("flash sales"));
+  const products = useAppSelector(
+    selectProductsBySection("Explore Our Products")
+  );
   const status = useAppSelector((s: any) => s.products.status);
   const { show } = useRatings();
 
@@ -35,7 +33,7 @@ const Flashsales = () => {
   const [canScrollRight, setCanScrollRight] = useState(true);
 
   useEffect(() => {
-    dispatch(fetchProductsBySection("flash sales"));
+    dispatch(fetchProductsBySection("Explore Our Products"));
   }, [dispatch]);
 
   // Create an end date 3 days from now
@@ -56,7 +54,9 @@ const Flashsales = () => {
 
     const scrollAmount = 300; // adjust to match card width + gap
     const newScrollLeft =
-      direction === "left" ? el.scrollLeft - scrollAmount : el.scrollLeft + scrollAmount;
+      direction === "left"
+        ? el.scrollLeft - scrollAmount
+        : el.scrollLeft + scrollAmount;
 
     el.scrollTo({ left: newScrollLeft, behavior: "smooth" });
   };
@@ -69,7 +69,7 @@ const Flashsales = () => {
       <div className="flexStart gap-[10px] ">
         <div className="w-[20px] h-[40px] rounded-[4px] bg-[#DB4444] "></div>
         <h3 className="font-poppins font-semibold text-base text-[#DB4444] ">
-          Today’s
+          Our Products
         </h3>
       </div>
 
@@ -77,12 +77,8 @@ const Flashsales = () => {
       <div className="flexBetween">
         <div className="flexStart flex-nowrap gap-4 lg:gap-[87px] mt-[11px] ">
           <h2 className="font-inter font-semibold text-[20px] lg:text-[36px] text-black ">
-            Flash Sales
+            Explore Our Products
           </h2>
-          <CountdownTimer
-            endDate={endDate.toISOString()}
-            onComplete={() => alert("Flash Sales Ended!")}
-          />
         </div>
         {/* arrows */}
         <div className="hidden lg:flexStart gap-2 ">
@@ -111,9 +107,13 @@ const Flashsales = () => {
       <div
         ref={scrollRef}
         onScroll={checkScroll}
-        className="flexStart gap-[30px] overflow-x-scroll hide-scrollbar mt-[30px] pb-[20px]"
+        className="
+    mt-[30px] pb-[20px] hide-scrollbar
+    flexStart gap-[30px] overflow-x-scroll   
+    lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-[30px] lg:overflow-visible 
+  "
       >
-        {products.map((p) => {
+        {products.slice(0, 8).map((p,index:any) => {
           const isWishlisted = !!wishlistMap[p.id];
           const inCart = !!cartItemsMap[p.id];
 
@@ -121,18 +121,20 @@ const Flashsales = () => {
             <div className="max-w-[270px] min-w-[270px]" key={p.id}>
               {/* image */}
               <div className="group relative bg-[#F5F5F5] h-[250px] w-full object-contain rounded-[4px]">
-                  <Link to={`/product/${p.id}`}>
-                <img
-                  className="h-[209px] w-full object-contain"
-                  src={p.img}
-                  alt={p.name}
-                  loading="lazy"
-                />
+                <Link to={`/product/${p.id}`}>
+                  <img
+                    className="h-[209px] w-full object-contain"
+                    src={p.img}
+                    alt={p.name}
+                    loading="lazy"
+                  />
                 </Link>
                 {/* add to cart */}
                 <div className="group-hover:flex h-[41px] w-full mt-6 hidden gap-3">
                   <button
-                    onClick={() => !inCart && dispatch(addToCart({ product: p }))}
+                    onClick={() =>
+                      !inCart && dispatch(addToCart({ product: p }))
+                    }
                     disabled={inCart}
                     className={`w-full px-6 py-2 rounded-xl font-medium transition ${
                       inCart
@@ -152,7 +154,9 @@ const Flashsales = () => {
                     <Eye size={20} />
                   </button>
                   <button
-                    onClick={() => dispatch(toggleWishlist({ productId: p.id }))}
+                    onClick={() =>
+                      dispatch(toggleWishlist({ productId: p.id }))
+                    }
                     className={`flexCenter w-[34px] h-[34px] rounded-full ${
                       isWishlisted
                         ? "bg-[#DB4444] text-white"
@@ -200,6 +204,19 @@ const Flashsales = () => {
                     ({p.ratingCount})
                   </span>
                 </div>
+                {/* colors */}
+                  {
+                    index >3 &&
+                    <div className="flex items-center gap-2 mt-2 ">
+                  {p?.colors.map((color: string, idx: number) => (
+                    <span
+                      key={idx}
+                      className={`w-5 h-5 rounded-full ${idx==0 && "border-[2px] border-black"} `}
+                      style={{ backgroundColor: color }}
+                    ></span>
+                  ))}
+              </div>
+                  }
               </div>
             </div>
           );
@@ -223,4 +240,4 @@ const Flashsales = () => {
   );
 };
 
-export default Flashsales;
+export default OurProducts;
