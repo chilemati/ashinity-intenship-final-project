@@ -1,15 +1,19 @@
 import { useState, useRef, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { MdArrowDropDown } from "react-icons/md";
 import MobileNav from "./MobileNav";
 import jsonData from "@data/nav.json";
 import SearchBar from "./SearchBar";
 import { navSvg } from "@/dynamicSvgs/nav";
+import { useAppSelector } from "@/store/hooks";
+import { selectCartCount, selectWishlistIds } from "@/store/cartSlice";
 
 const { nav, dropdown } = jsonData;
 
 const Navber = () => {
+   const cartCount = useAppSelector(selectCartCount);
+  const wishlistIds = useAppSelector(selectWishlistIds);
   const [openUserMenu, setOpenUserMenu] = useState(false);
   const userRef = useRef(null);
 
@@ -59,23 +63,37 @@ const Navber = () => {
                 placeholder="What are you looking for?"
               />
             </div>
-            <button className="text-black"> {navSvg.heart} </button>
+            <Link to="/wishlist" className="">
+            <button className="text-black relative">
+            {navSvg.heart}
+               {wishlistIds.length > 0 && (
+            <span className="flexCenter h-4 w-4 rounded-full absolute top-[-4px] right-[-4px] bg-[#DB4444] text-white font-poppins text-[12px]">
+              {wishlistIds.length}
+            </span>
+          )}
+            </button>
+            </Link>
+            <Link to="/cart" className="">
             <button className="text-black relative">
               {navSvg.cart}
-              <span className="flexCenter h-4 w-4 rounded-full absolute top-[-4px] right-[-4px] bg-[#DB4444] text-white font-poppins text-[12px]">
-                0
-              </span>
+               {cartCount > 0 && (
+            <span className="flexCenter h-4 w-4 rounded-full absolute top-[-4px] right-[-4px] bg-[#DB4444] text-white font-poppins text-[12px]">
+              {cartCount}
+            </span>
+          )}
             </button>
+            </Link>
 
             {/* user */}
             <div ref={userRef} className="relative">
+              <Link to="#" className="">
               <button
                 onClick={() => setOpenUserMenu((prev) => !prev)}
                 className="focus:outline-none"
               >
                 <img src="/svg/user.svg" alt="user icon" loading="lazy" />
               </button>
-
+              </Link>
               {openUserMenu && (
                 <div
                   className="absolute right-0 mt-2 w-[224px] h-[208px] rounded drop-bg shadow-lg z-50 p-2 flex flex-col justify-evenly"

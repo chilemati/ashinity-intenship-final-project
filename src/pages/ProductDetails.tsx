@@ -1,7 +1,12 @@
+import Headline from "@/components/home/Headline"
+import Navber from "@/components/Navber"
 
 const ProductDetails = () => {
   return (
-    <div>ProductDetails</div>
+    <div>
+      <Headline />
+      <Navber />
+      ProductDetails</div>
   )
 }
 

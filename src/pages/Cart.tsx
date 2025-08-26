@@ -1,7 +1,12 @@
+import Headline from "@/components/home/Headline"
+import Navber from "@/components/Navber"
 
 const Cart = () => {
   return (
-    <div>Cart</div>
+    <div>
+      <Headline />
+      <Navber />
+      Cart</div>
   )
 }
 

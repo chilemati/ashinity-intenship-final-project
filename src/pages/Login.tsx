@@ -1,7 +1,12 @@
+import Headline from "@/components/home/Headline"
+import Navber from "@/components/Navber"
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <div>
+      <Headline />
+      <Navber />
+      Login</div>
   )
 }
 

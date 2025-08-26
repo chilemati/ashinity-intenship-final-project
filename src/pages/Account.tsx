@@ -1,7 +1,12 @@
+import Headline from "@/components/home/Headline"
+import Navber from "@/components/Navber"
 
 const Account = () => {
   return (
-    <div>Account</div>
+    <div>
+      <Headline />
+      <Navber />
+      Account</div>
   )
 }
 
