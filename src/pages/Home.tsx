@@ -6,6 +6,7 @@ import Thismonth from "@/components/home/Thismonth"
 import HeroCategory from "@/components/home/HeroCategory"
 import Navber from "@/components/Navber"
 import OurProducts from "@/components/home/OurProducts"
+import NewArrival from "@/components/home/NewArrival"
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Thismonth />
       <HeroCategory />
       <OurProducts />
+      <NewArrival />
 
     </div>
   )
