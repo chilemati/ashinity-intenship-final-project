@@ -1,4 +1,6 @@
+import Footer from "@/components/home/Footer"
 import Headline from "@/components/home/Headline"
+import PageHistory from "@/components/home/PageHistory"
 import Navber from "@/components/Navber"
 
 const ProductDetails = () => {
@@ -6,7 +8,10 @@ const ProductDetails = () => {
     <div>
       <Headline />
       <Navber />
-      ProductDetails</div>
+      <PageHistory path="Account / Gaming " current="Product name" />
+      ProductDetails
+      <Footer />
+      </div>
   )
 }
 

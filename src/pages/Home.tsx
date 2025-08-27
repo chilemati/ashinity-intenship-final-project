@@ -9,6 +9,7 @@ import OurProducts from "@/components/home/OurProducts"
 import NewArrival from "@/components/home/NewArrival"
 import Services from "@/components/home/Services"
 import BackToTop from "@/components/home/BackToTop"
+import Footer from "@/components/home/Footer"
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       <NewArrival />
       <Services />
       <BackToTop />
+      <Footer />
 
     </div>
   )

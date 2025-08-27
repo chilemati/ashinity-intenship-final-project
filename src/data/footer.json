@@ -1,0 +1,94 @@
+{
+    "data": {
+        "box1": {
+            "title": "Exclusive",
+            "h3": "Subscribe",
+            "p": "Get 10% off your first order"
+        },
+        "box2": {
+            "title": "Support",
+            "list": [
+                "111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.",
+                "exclusive@gmail.com",
+                "+88015-88888-9999"
+            ]
+        },
+        "box3": {
+            "title": "Support",
+            "links": [
+               {
+                "to": "/account",
+                "text": "My Account"
+               },
+               {
+                "to": "/login",
+                "text": "Login / Registert"
+               },
+               {
+                "to": "/cart",
+                "text": "Cart"
+               },
+               {
+                "to": "/wishlist",
+                "text": "Wishlist"
+               },
+               {
+                "to": "/shop",
+                "text": "Shop"
+               }
+            ]
+        },
+        "box4": {
+            "title": "Quick Link",
+            "links": [
+               {
+                "to": "/privacy-policy",
+                "text": "Privacy Policy"
+               },
+               {
+                "to": "/terms",
+                "text": "Terms Of Use"
+               },
+               {
+                "to": "/faq",
+                "text": "FAQ"
+               },
+               {
+                "to": "/contact",
+                "text": "Contact"
+               }
+               
+            ]
+        },
+        "box5": {
+            "title": "Download App",
+           "p": "Save $3 with App New User Only",
+           "qr": "/png/qr.png",
+           "goggleStore": "/png/playstore.png",
+           "appStore": "/png/applestore.png",
+           "socials": [
+            {
+                "to": "#",
+                "icon": "/svg/facebook.svg",
+                "name": "facebook"
+            },
+            {
+                "to": "#",
+                "icon": "/svg/twitter.svg",
+                "name": "twitter"
+            },
+            {
+                "to": "#",
+                "icon": "/svg/instagram.svg",
+                "name": "instagram"
+            },
+            {
+                "to": "#",
+                "icon": "/svg/linkedin.svg",
+                "name": "linkedin"
+            }
+           ]
+        }
+          
+    }
+}

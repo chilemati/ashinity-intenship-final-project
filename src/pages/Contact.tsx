@@ -1,4 +1,6 @@
+import Footer from "@/components/home/Footer"
 import Headline from "@/components/home/Headline"
+import PageHistory from "@/components/home/PageHistory"
 import Navber from "@/components/Navber"
 
 const Contact = () => {
@@ -6,7 +8,10 @@ const Contact = () => {
     <div>
       <Headline />
       <Navber />
-      Contact</div>
+      <PageHistory path="Home" current="Contact" />
+      Contact
+      <Footer />
+      </div>
   )
 }
 

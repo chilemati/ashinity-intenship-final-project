@@ -1,3 +1,4 @@
+import Footer from "@/components/home/Footer"
 import Headline from "@/components/home/Headline"
 import Navber from "@/components/Navber"
 
@@ -6,7 +7,9 @@ const Signup = () => {
     <div>
       <Headline />
       <Navber />
-      Signup</div>
+      Signup
+      <Footer />
+      </div>
   )
 }
 

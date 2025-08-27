@@ -21,6 +21,15 @@
   }
 }
 
+@layer utilities {
+  .autofill-fix:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: currentColor !important;
+    caret-color: currentColor !important;
+  }
+}
+
+
 .drop-bg {
   background: linear-gradient(
     135deg,
@@ -46,4 +55,34 @@
 .hide-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
+
+/* Make autofill transparent & dynamic */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  box-shadow: 0 0 0px 1000px transparent inset !important;
+
+  -webkit-text-fill-color: currentColor !important; /* 👈 follows input text color */
+  caret-color: currentColor !important;            /* 👈 caret matches text color */
+  
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+
+
+
+/* Optional: also for dark mode */
+.dark input:-webkit-autofill,
+.dark input:-webkit-autofill:hover,
+.dark input:-webkit-autofill:focus,
+.dark input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px #111 inset !important;
+  box-shadow: 0 0 0px 1000px #111 inset !important;
+  -webkit-text-fill-color: #fff !important;
+  caret-color: #fff !important;
+}
+
+
 

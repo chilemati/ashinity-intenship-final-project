@@ -1,6 +1,8 @@
 // src/router.tsx
 import { createBrowserRouter } from "react-router-dom";
 import { lazy } from "react";
+const Checkout = lazy(() => import("@/pages/Checkout"));
+const NotFound = lazy(() => import("@/pages/NotFound"));
 
 const Signup = lazy(() => import("../pages/Signup"));
 const Login = lazy(() => import("../pages/Login"));
@@ -49,7 +51,16 @@ export const router = createBrowserRouter([
     element: <Account />,
   },
   {
+    path: "checkout",
+    element: <Checkout />,
+  },
+  {
     path: "product/:id",
     element: <ProductDetails />,
+  },
+   // 👇 Catch-all 404 route
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
