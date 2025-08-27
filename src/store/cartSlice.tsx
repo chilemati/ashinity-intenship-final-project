@@ -1,21 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import {  parseMoney } from "./api";
+import { parseMoney } from "./api";
 import type { Product } from "./api";
-import  type { RootState } from "./store";
+import type { RootState } from "./store";
 
 // ---- Types ----
 export type CartLine = {
-  productId: string;    // keep ref only
+  productId: string;
   name: string;
   img: string;
-  unitPrice: number;    // parsed from product.price
-  quantity: number;     // >= 1
+  unitPrice: number;
+  quantity: number;
 };
 
 export type CartState = {
-  items: Record<string, CartLine>; // productId -> line
-  wishlist: Record<string, true>;  // set of productIds
+  items: Record<string, CartLine>;
+  wishlist: Record<string, true>;
 };
 
 // ---- Persistence helpers ----
@@ -39,15 +39,16 @@ export const saveState = (state: CartState) => {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   } catch {
-    // ignore write errors (quota etc.)
+    // ignore
   }
 };
 
 // ---- Initial ----
-const initialState: CartState = loadState() ?? {
-  items: {},
-  wishlist: {},
-};
+const initialState: CartState =
+  loadState() ?? {
+    items: {},
+    wishlist: {},
+  };
 
 // ---- Slice ----
 const cartSlice = createSlice({
@@ -74,13 +75,15 @@ const cartSlice = createSlice({
           quantity: Math.max(1, Math.min(999, quantity)),
         };
       }
-      // If item exists in wishlist, optionally remove it here:
+
       if (state.wishlist[id]) delete state.wishlist[id];
+      saveState(state); // persist
     },
 
     removeFromCart(state, action: PayloadAction<{ productId: string | number }>) {
       const id = String(action.payload.productId);
       delete state.items[id];
+      saveState(state);
     },
 
     updateQuantity(
@@ -92,10 +95,12 @@ const cartSlice = createSlice({
       if (state.items[id]) {
         state.items[id].quantity = q;
       }
+      saveState(state);
     },
 
     clearCart(state) {
       state.items = {};
+      saveState(state);
     },
 
     // Wishlist
@@ -103,16 +108,22 @@ const cartSlice = createSlice({
       const id = String(action.payload.productId);
       if (state.wishlist[id]) delete state.wishlist[id];
       else state.wishlist[id] = true;
+      saveState(state);
     },
 
     addToWishlist(state, action: PayloadAction<{ productId: string | number }>) {
       const id = String(action.payload.productId);
       state.wishlist[id] = true;
+      saveState(state);
     },
 
-    removeFromWishlist(state, action: PayloadAction<{ productId: string | number }>) {
+    removeFromWishlist(
+      state,
+      action: PayloadAction<{ productId: string | number }>
+    ) {
       const id = String(action.payload.productId);
       delete state.wishlist[id];
+      saveState(state);
     },
 
     moveWishlistItemToCart(
@@ -121,9 +132,9 @@ const cartSlice = createSlice({
     ) {
       const { product, quantity = 1 } = action.payload;
       const id = String(product.id);
-      // Add to cart
       const unitPrice = parseMoney(product.price);
       const line = state.items[id];
+
       if (line) line.quantity = Math.min(999, line.quantity + quantity);
       else {
         state.items[id] = {
@@ -134,8 +145,9 @@ const cartSlice = createSlice({
           quantity: Math.max(1, Math.min(999, quantity)),
         };
       }
-      // Remove from wishlist
+
       if (state.wishlist[id]) delete state.wishlist[id];
+      saveState(state);
     },
   },
 });
@@ -168,7 +180,10 @@ export const selectCartSubtotal = (id: string | number) => (s: RootState) => {
 };
 
 export const selectCartTotal = (s: RootState) =>
-  Object.values(s.cart.items).reduce((sum, l) => sum + l.unitPrice * l.quantity, 0);
+  Object.values(s.cart.items).reduce(
+    (sum, l) => sum + l.unitPrice * l.quantity,
+    0
+  );
 
 export const selectWishlistIds = (s: RootState) => Object.keys(s.cart.wishlist);
 export const selectIsWishlisted = (id: string | number) => (s: RootState) =>

@@ -6,7 +6,7 @@ const data = jsonData.data;
 const Footer = () => {
   return (
     <div className="min-h-[440px] w-full bg-black pb-6  " >
-        <div className="w-[90%] pt-[20px] text-[#FAFAFA] lg:pt-[80px] grid-cols-1 md:grid-cols-3 grid lg:grid-cols-[217px_175px_123px_109px_198px] gap-[20px] lg:gap-[67px]   mx-auto ">
+        <div className="w-[90%] pt-[20px] text-[#FAFAFA] lg:pt-[80px] grid-cols-1 md:grid-cols-3 grid xl:grid-cols-[217px_175px_123px_109px_198px] gap-[20px] lg:gap-[67px]   mx-auto ">
             {/* box1 */}
             <div className=" ">
                 <h2 className="font-inter font-bold text-nowrap text-[24px] "> {data.box1.title} </h2>
