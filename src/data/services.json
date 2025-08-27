@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "name": "FREE AND FAST DELIVERY",
+            "p": "Free delivery for all orders over $140",
+            "icon": "/svg/delivery.svg"
+        },
+        {
+            "name": "24/7 CUSTOMER SERVICE",
+            "p": "Friendly 24/7 customer support",
+            "icon": "/svg/customerService.svg"
+        },
+        {
+            "name": "MONEY BACK GUARANTEE",
+            "p": "We reurn money within 30 days",
+            "icon": "/svg/shield.svg"
+        }
+    ]
+}

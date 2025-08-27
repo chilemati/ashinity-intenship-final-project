@@ -33,10 +33,10 @@ const Thismonth = () => {
     dispatch(fetchProductsBySection("Best Selling Products"));
   }, [dispatch]);
 
-  if (status === "loading" && products.length === 0) return <p>Loading…</p>;
+  if (status === "loading" && products.length === 0) return <p className="my-5 text-black text-center " >Loading…</p>;
 
   return (
-    <div className="mt-[140px] w-[95%] lg:w-[90%] mx-auto">
+    <div className="mt-[40px] lg:mt-[140px] w-[95%] lg:w-[90%] mx-auto">
       {/* title */}
       <div className="flexStart gap-[10px] ">
         <div className="w-[20px] h-[40px] rounded-[4px] bg-[#DB4444]" />

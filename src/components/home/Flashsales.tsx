@@ -61,10 +61,10 @@ const Flashsales = () => {
     el.scrollTo({ left: newScrollLeft, behavior: "smooth" });
   };
 
-  if (status === "loading" && products.length === 0) return <p>Loading…</p>;
+  if (status === "loading" && products.length === 0) return <p className="my-5 text-black text-center " >Loading…</p>;
 
   return (
-    <div className="mt-[140px] w-[95%] lg:w-[90%] mx-auto border-b-[0.5px] border-b-black ">
+    <div className="mt-[40px] lg:mt-[140px] w-[95%] lg:w-[90%] mx-auto border-b-[0.5px] border-b-black ">
       {/* title */}
       <div className="flexStart gap-[10px] ">
         <div className="w-[20px] h-[40px] rounded-[4px] bg-[#DB4444] "></div>
@@ -75,8 +75,8 @@ const Flashsales = () => {
 
       {/* flash timer */}
       <div className="flexBetween">
-        <div className="flexStart flex-nowrap gap-4 lg:gap-[87px] mt-[11px] ">
-          <h2 className="font-inter font-semibold text-[20px] lg:text-[36px] text-black ">
+        <div className="flexStart flex-wrap md:flex-nowrap gap-4 lg:gap-[87px] mt-[11px] ">
+          <h2 className="font-inter font-semibold text-[28px] lg:text-[36px] text-black ">
             Flash Sales
           </h2>
           <CountdownTimer

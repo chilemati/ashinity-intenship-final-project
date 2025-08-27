@@ -7,6 +7,8 @@ import HeroCategory from "@/components/home/HeroCategory"
 import Navber from "@/components/Navber"
 import OurProducts from "@/components/home/OurProducts"
 import NewArrival from "@/components/home/NewArrival"
+import Services from "@/components/home/Services"
+import BackToTop from "@/components/home/BackToTop"
 
 const Home = () => {
   return (
@@ -20,6 +22,8 @@ const Home = () => {
       <HeroCategory />
       <OurProducts />
       <NewArrival />
+      <Services />
+      <BackToTop />
 
     </div>
   )

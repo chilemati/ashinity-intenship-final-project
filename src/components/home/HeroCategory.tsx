@@ -37,7 +37,7 @@ const HeroCategory = () => {
     <>
       <div
         {...handlers} // 👈 attach swipe gestures here
-        className="w-full md:w-[90%] mx-auto relative min-h-[500px] mt-[140px] bg-black"
+        className="w-full md:w-[90%] mx-auto relative min-h-[500px] mt-[40px] lg:mt-[140px] bg-black"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
