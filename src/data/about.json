@@ -1,0 +1,342 @@
+{
+    "data": {
+        "section1": {
+            "left": {
+                "title": "Our Story",
+                "p1": "Launced in 2015, Exclusive is South Asia’s premier online shopping makterplace with an active presense in Bangladesh. Supported by wide range of tailored marketing, data and service solutions, Exclusive has 10,500 sallers and 300 brands and serves 3 millioons customers across the region. ",
+                "p2": "Exclusive has more than 1 Million products to offer, growing at a very fast. Exclusive offers a diverse assotment in categories ranging  from consumer."
+            },
+            "righg": {
+                "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206984/exclusive/fcc89aaa7b85f8c1dcce81e71e2eb178be13bd4d_v28ukd.jpg"
+            }
+        },
+        "sectin2": [
+            {
+                "icon": "shop",
+                "figure": "10.5k ",
+                "p": "Sallers active our site",
+                "active": true
+            },
+            {
+                "icon": "sale",
+                "figure": "33k ",
+                "p": "Mopnthly Produduct Sale",
+                "active": false
+            },
+            {
+                "icon": "shoppingbag",
+                "figure": "145.5k ",
+                "p": "Customer active in our site",
+                "active": false
+            },
+            {
+                "icon": "moneybag",
+                "figure": "25k ",
+                "p": "Anual gross sale in our site",
+                "active": false
+            }
+        ]
+    },
+    "section3": [
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206997/exclusive/088149fd5afc043392ee3cbb529f429b3e2098d3_nnomdb.png",
+            "name": "Tom Cruise",
+            "title": "Founder & Chairman",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        },
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206984/exclusive/8438eab9a2fe88af0272adecd83422d0cb7e20d7_jelqsi.png",
+            "name": "Emma Watson",
+            "title": "Managing Director",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        },
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756207012/exclusive/ede48f2b5df8103b281240ce5bafe5dd7d215ab8_dsogjv.png",
+            "name": "Emma Watson",
+            "title": "Managing Director",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        },
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206997/exclusive/088149fd5afc043392ee3cbb529f429b3e2098d3_nnomdb.png",
+            "name": "Tom Cruise",
+            "title": "Founder & Chairman",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        },
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206984/exclusive/8438eab9a2fe88af0272adecd83422d0cb7e20d7_jelqsi.png",
+            "name": "Emma Watson",
+            "title": "Managing Director",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        },
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756207012/exclusive/ede48f2b5df8103b281240ce5bafe5dd7d215ab8_dsogjv.png",
+            "name": "Emma Watson",
+            "title": "Managing Director",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        },
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206997/exclusive/088149fd5afc043392ee3cbb529f429b3e2098d3_nnomdb.png",
+            "name": "Tom Cruise",
+            "title": "Founder & Chairman",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        },
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206984/exclusive/8438eab9a2fe88af0272adecd83422d0cb7e20d7_jelqsi.png",
+            "name": "Emma Watson",
+            "title": "Managing Director",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        },
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756207012/exclusive/ede48f2b5df8103b281240ce5bafe5dd7d215ab8_dsogjv.png",
+            "name": "Emma Watson",
+            "title": "Managing Director",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        },
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206997/exclusive/088149fd5afc043392ee3cbb529f429b3e2098d3_nnomdb.png",
+            "name": "Tom Cruise",
+            "title": "Founder & Chairman",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        },
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206984/exclusive/8438eab9a2fe88af0272adecd83422d0cb7e20d7_jelqsi.png",
+            "name": "Emma Watson",
+            "title": "Managing Director",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        },
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756207012/exclusive/ede48f2b5df8103b281240ce5bafe5dd7d215ab8_dsogjv.png",
+            "name": "Emma Watson",
+            "title": "Managing Director",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        },
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206997/exclusive/088149fd5afc043392ee3cbb529f429b3e2098d3_nnomdb.png",
+            "name": "Tom Cruise",
+            "title": "Founder & Chairman",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        },
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756206984/exclusive/8438eab9a2fe88af0272adecd83422d0cb7e20d7_jelqsi.png",
+            "name": "Emma Watson",
+            "title": "Managing Director",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        },
+        {
+            "img": "https://res.cloudinary.com/dlifiojbx/image/upload/v1756207012/exclusive/ede48f2b5df8103b281240ce5bafe5dd7d215ab8_dsogjv.png",
+            "name": "Emma Watson",
+            "title": "Managing Director",
+            "socials": 
+            [
+                {
+                    "name": "twitter",
+                    "to": "#"
+                },
+                {
+                    "name": "instagram",
+                    "to": "#"
+                },
+                {
+                    "name": "linkedin",
+                    "to": "#"
+                }
+            ]
+        }
+    ]
+}
