@@ -11,6 +11,7 @@ import PageHistory from "@/components/home/PageHistory";
 import Navber from "@/components/Navber";
 import { RxCaretDown, RxCaretUp } from "react-icons/rx";
 import { X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const items = useAppSelector(selectCartItems);
@@ -153,10 +154,11 @@ const Cart = () => {
               <span>Total</span>
               <span>${total.toFixed(2)}</span>
             </div>
-
+              <Link to="/checkout">
             <button className="block mx-auto mt-4 px-6 py-2 bg-[#DB4444] text-white rounded">
               Proceed to Checkout
             </button>
+              </Link>
           </div>
         </div>
       </div>

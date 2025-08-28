@@ -59,9 +59,9 @@ const ProductDetails = () => {
         current={product.name}
       />
 
-      <div className="w-[95%] lg:w-[90%] mx-auto mt-10 grid grid-cols-1 lg:grid-cols-[170px_500px_1fr] gap-[30px]">
+      <div className="w-[95%] lg:w-[90%] mx-auto mt-10 grid grid-cols-1 xl:grid-cols-[170px_500px_1fr] gap-[30px]">
         {/* other images */}
-        <div className="hidden lg:flex flex-col  gap-4">
+        <div className="hidden xl:flex flex-col  gap-4">
           {product.otherImgs?.length
             ? product.otherImgs.map((img, i) => (
                 <img
