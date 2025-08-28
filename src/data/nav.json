@@ -34,23 +34,24 @@
     "dropdown": [
     {
       "icon": "/svg/user2.svg",
-      "text": "Manage My Account"
+      "text": "Manage My Account",
+      "to": "/account"
     },
     {
       "icon": "/svg/mailbag.svg",
-      "text": "My Order"
+      "text": "My Order",
+      "to": "/orders"
     },
     {
       "icon": "/svg/cancel.svg",
-      "text": "My Cancellations"
+      "text": "My Cancellations",
+      "to": "/cancellations"
     },
     {
       "icon": "/svg/star.svg",
-      "text": "My Reviews"
-    },
-    {
-      "icon": "/svg/logout.svg",
-      "text": "Logout"
+      "text": "My Reviews",
+      "to": "/reviews"
     }
+    
   ]
 }

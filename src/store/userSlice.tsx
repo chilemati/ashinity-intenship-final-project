@@ -52,6 +52,36 @@ export const signupUser = createAsyncThunk(
   }
 );
 
+export const updateUserProfile = createAsyncThunk(
+  "users/updateUserProfile",
+  async (
+    {
+      id,
+      updates,
+    }: { id: string; updates: Partial<User> },
+    { getState, rejectWithValue }
+  ) => {
+    const state = getState() as { users: UserState };
+    const users = [...state.users.users];
+
+    const idx = users.findIndex((u) => u.id === id);
+    if (idx === -1) return rejectWithValue("User not found");
+
+    const updatedUser = { ...users[idx], ...updates };
+    users[idx] = updatedUser;
+
+    localStorage.setItem("users", JSON.stringify(users));
+
+    const currentUser = state.users.currentUser;
+    if (currentUser && currentUser.id === id) {
+      localStorage.setItem("currentUser", JSON.stringify(updatedUser));
+    }
+
+    return updatedUser;
+  }
+);
+
+
 export const loginUser = createAsyncThunk(
   "users/loginUser",
   async (
@@ -153,7 +183,17 @@ const userSlice = createSlice({
       .addCase(resetPassword.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.payload as string;
-      });
+      })
+      .addCase(updateUserProfile.fulfilled, (state, action: PayloadAction<User>) => {
+  state.currentUser = action.payload;
+  const idx = state.users.findIndex((u) => u.id === action.payload.id);
+  if (idx !== -1) state.users[idx] = action.payload;
+  state.status = "succeeded";
+})
+.addCase(updateUserProfile.rejected, (state, action) => {
+  state.status = "failed";
+  state.error = action.payload as string;
+});
   },
 });
 

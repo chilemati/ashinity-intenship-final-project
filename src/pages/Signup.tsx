@@ -7,6 +7,7 @@ import Navber from "@/components/Navber";
 import type { AppDispatch, RootState } from "@/store/store";
 import { signupUser } from "@/store/userSlice";
 import { useNavigate } from "react-router-dom";
+import { Eye, EyeOff } from "lucide-react";
 
 const Signup = () => {
   const [form, setForm] = useState({
@@ -14,9 +15,9 @@ const Signup = () => {
     email: "",
     password: "",
   });
+  const [showPassword, setShowPassword] = useState(false);
 
   const redir = useNavigate();
-
   const dispatch = useDispatch<AppDispatch>();
   const { status, error } = useSelector((state: RootState) => state.users);
 
@@ -46,7 +47,7 @@ const Signup = () => {
 
       const timer = setTimeout(() => {
         redir("/login");
-      }, 10000); // 10s delay
+      }, 10000);
 
       return () => clearTimeout(timer);
     } else if (status === "failed") {
@@ -91,14 +92,25 @@ const Signup = () => {
               onChange={handleChange}
               className="w-full h-[32px] border-b outline-none px-1"
             />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={form.password}
-              onChange={handleChange}
-              className="w-full h-[32px] border-b outline-none px-1"
-            />
+
+            {/* Password with toggle */}
+            <div className="relative w-full">
+              <input
+                type={showPassword ? "text" : "password"}
+                name="password"
+                placeholder="Password"
+                value={form.password}
+                onChange={handleChange}
+                className="w-full h-[32px] border-b outline-none px-1 pr-8"
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500"
+              >
+                {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+              </button>
+            </div>
 
             <button
               type="submit"

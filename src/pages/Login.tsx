@@ -7,12 +7,14 @@ import Headline from "@/components/home/Headline";
 import Navber from "@/components/Navber";
 import type { AppDispatch, RootState } from "@/store/store";
 import { loginUser } from "@/store/userSlice";
+import { Eye, EyeOff } from "lucide-react";
 
 const Login = () => {
   const [form, setForm] = useState({
     email: "",
     password: "",
   });
+  const [showPassword, setShowPassword] = useState(false);
 
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();
@@ -45,7 +47,7 @@ const Login = () => {
       setRedirecting(true);
       const timer = setTimeout(() => {
         navigate("/account");
-      }, 10000); // wait 10s before redirect
+      }, 10000);
       return () => clearTimeout(timer);
     } else if (status === "failed") {
       setMessage(error || "Login failed. Please try again.");
@@ -81,36 +83,46 @@ const Login = () => {
               onChange={handleChange}
               className="w-full h-[32px] border-b outline-none px-1"
             />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={form.password}
-              onChange={handleChange}
-              className="w-full h-[32px] border-b outline-none px-1"
-            />
-            <fieldset className="flexBetween" >
-            <button
-              type="submit"
-              disabled={status === "loading" || redirecting}
-              className="w-full h-[40px] bg-[#DB4444] text-white rounded-md flex items-center justify-center mt-4"
-            >
-              {status === "loading" || redirecting ? (
-                <span className="animate-spin border-2 border-white border-t-transparent rounded-full w-5 h-5"></span>
-              ) : (
-                "Log In"
-              )}
-            </button>
 
-            {/* Forgot Password Button */}
-            <button
-              type="button"
-              onClick={() => navigate("/reset-password")}
-              className="w-full h-[40px] bg-white text-[#DB4444] font-poppins  rounded-md flex items-center justify-center mt-2"
-            >
-              Forgot Password?
-            </button>
+            {/* Password with toggle */}
+            <div className="relative w-full">
+              <input
+                type={showPassword ? "text" : "password"}
+                name="password"
+                placeholder="Password"
+                value={form.password}
+                onChange={handleChange}
+                className="w-full h-[32px] border-b outline-none px-1 pr-8"
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500"
+              >
+                {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+              </button>
+            </div>
 
+            <fieldset className="flexBetween">
+              <button
+                type="submit"
+                disabled={status === "loading" || redirecting}
+                className="w-full h-[40px] bg-[#DB4444] text-white rounded-md flex items-center justify-center mt-4"
+              >
+                {status === "loading" || redirecting ? (
+                  <span className="animate-spin border-2 border-white border-t-transparent rounded-full w-5 h-5"></span>
+                ) : (
+                  "Log In"
+                )}
+              </button>
+
+              <button
+                type="button"
+                onClick={() => navigate("/reset-password")}
+                className="w-full h-[40px] bg-white text-[#DB4444] rounded-md flex items-center justify-center mt-2"
+              >
+                Forgot Password?
+              </button>
             </fieldset>
 
             {redirecting && (
