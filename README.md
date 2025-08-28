@@ -1,41 +1,56 @@
 # 🛒 Full E-Commerce Website
 
-This is my **Ashinity Internship Final Project**, an e-commerce web application built with **React, TypeScript, and Vite**.  
-The project implements a modern shopping experience inspired by a [Figma community design](https://www.figma.com/design/T8wi5XpDx1Zso0c5wuVRhF/Full-E-Commerce-Website-UI-UX-Design--Community-?node-id=34-213&t=JesBGGS9OfcTnbPS-0).  
+This is my **Ashinity Internship Final Project**, a complete e-commerce web application built with **React, TypeScript, Redux Toolkit, TailwindCSS, and Vite**.  
+The project replicates a real-world shopping platform with modern UI/UX, user authentication, cart & wishlist management, and state persistence.  
 
-The app is designed with clean UI/UX, optimized performance, and scalable architecture suitable for real-world e-commerce platforms.
+Inspired by this [Figma community design](https://www.figma.com/design/T8wi5XpDx1Zso0c5wuVRhF/Full-E-Commerce-Website-UI-UX-Design--Community-?node-id=34-213&t=JesBGGS9OfcTnbPS-0), the project demonstrates my ability to translate design into production-ready code.
+
+🔗 **Live Demo:** [ashinity-intenship-final-project.vercel.app](https://ashinity-intenship-final-project.vercel.app/)
 
 ---
 
 ## 🚀 Tech Stack
 
-- **Frontend Framework:** [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)  
+- **Frontend:** [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)  
 - **Bundler / Dev Server:** [Vite](https://vitejs.dev/)  
-- **Styling:** TailwindCSS (with custom components and utilities)  
-- **Icons & UI:** Lucide Icons / Custom SVGs  
-- **Linting & Code Quality:** ESLint + Prettier  
-- **State Management:** (to be added – e.g., Redux Toolkit, Zustand, or Context API)  
-- **Backend / API:** (optional – if connected to a backend later)  
+- **Styling:** [TailwindCSS](https://tailwindcss.com/) with custom utilities  
+- **UI & Icons:** Lucide Icons + custom SVGs  
+- **State Management:** [Redux Toolkit](https://redux-toolkit.js.org/) (cart, wishlist, users, products)  
+- **Persistence:** LocalStorage (cart, wishlist, user sessions)  
+- **Media Management:** [Cloudinary](https://cloudinary.com/) (product images)  
+- **Mock API:** [MockAPI.io](https://mockapi.io/) (product & user data simulation)  
+- **Code Quality:** ESLint + Prettier  
 
 ---
 
-## 📌 Features (Planned & Implemented)
+## 📌 Features
 
-- 🏠 **Landing Page** – modern homepage showcasing featured products  
-- 🛍️ **Product Listings** – category-based browsing with filters  
-- 🔍 **Search & Filters** – dynamic search and filtering options  
-- 🛒 **Cart & Checkout Flow** – add to cart, manage cart items, checkout process  
-- 👤 **User Authentication** – login, signup, and profile management (planned)  
-- 💳 **Payment Integration** – placeholder for payment gateway integration (planned)  
-- 📱 **Responsive Design** – optimized for desktop, tablet, and mobile  
+✅ **Landing Page** – clean homepage with featured sections  
+✅ **Product Listings** – fetch products from MockAPI with section-based browsing  
+✅ **Search & Filters** – filter products dynamically  
+✅ **Product Details** – detailed view with related products  
+✅ **Cart Management** – add, update, remove, persist across sessions  
+✅ **Wishlist** – toggle wishlist, move items to cart  
+✅ **Checkout Flow** – cart → checkout page (UI)  
+✅ **User Authentication** – signup, login, logout, reset password  
+✅ **User Profile** – edit profile & manage account info  
+✅ **Password Reset** – simulated update with persistence  
+✅ **Responsive Design** – fully responsive across devices  
+✅ **State Persistence** – user, cart, wishlist persist in localStorage  
+
+Planned Enhancements:
+- 💳 Payment gateway integration  
+- 📦 Order history & tracking  
+- 🔔 Notifications & order updates  
 
 ---
 
 ## ⚙️ Project Setup
 
-Clone the repository and install dependencies:
+Clone repository and install dependencies:
 
 ```bash
 git clone https://github.com/chilemati/ashinity-intenship-final-project.git
 cd ashinity-intenship-final-project
 npm install
+npm run dev
