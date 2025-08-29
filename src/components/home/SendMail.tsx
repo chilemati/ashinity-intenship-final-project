@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useState, useEffect } from "react";
 import { Send } from "lucide-react";
 
 const SendMail: React.FC = () => {
@@ -34,20 +33,29 @@ const SendMail: React.FC = () => {
     }, 500);
   };
 
+  // Clear success after 1 minute
+  useEffect(() => {
+    if (success) {
+      const timer = setTimeout(() => {
+        setSuccess("");
+      }, 30000); // 30 seconds
+      return () => clearTimeout(timer);
+    }
+  }, [success]);
+
   return (
-    <div className="w-full mt-4 ">
+    <div className="w-full mt-4">
       <form
         onSubmit={handleSubmit}
-        className="relative w-full flex items-center bg-transparent "
+        className="relative w-full flex items-center bg-transparent"
       >
         <input
           type="email"
           placeholder="Enter your email"
           value={email}
-          autoComplete="false"
+          autoComplete="off"
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full bg-transparent border-[1.5px] t border-[#FAFAFA] rounded px-4 py-3 pr-12 outline-none text-white autofill-fix "
-          
+          className="w-full bg-transparent border-[1.5px] border-[#FAFAFA] rounded px-4 py-3 pr-12 outline-none text-white autofill-fix"
         />
         <button
           type="submit"
@@ -58,34 +66,10 @@ const SendMail: React.FC = () => {
       </form>
 
       {/* Error Message */}
-      <AnimatePresence>
-        {error && (
-          <motion.p
-            className="text-red-500 text-sm mt-2"
-            initial={{ opacity: 0, y: -5 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -5 }}
-            transition={{ duration: 0.3 }}
-          >
-            {error}
-          </motion.p>
-        )}
-      </AnimatePresence>
+      {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
 
       {/* Success Message */}
-      <AnimatePresence>
-        {success && (
-          <motion.p
-            className="text-green-500 text-sm mt-2"
-            initial={{ opacity: 0, y: -5 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -5 }}
-            transition={{ duration: 0.3 }}
-          >
-            {success}
-          </motion.p>
-        )}
-      </AnimatePresence>
+      {success && <p className="text-green-500 text-sm mt-2">{success}</p>}
     </div>
   );
 };

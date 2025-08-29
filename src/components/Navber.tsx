@@ -50,7 +50,7 @@ const Navber = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="font-inter text-[18px] text-nowrap md:text-[24px] font-bold text-black">
-            Exclusive
+           <Link to="/"> Exclusive</Link>
           </div>
 
           {/* main nav */}

@@ -26,11 +26,11 @@ const Cart = () => {
 
       <div className="w-[95%] lg:w-[90%] pb-[80px] mx-auto mt-10">
         {/* Table header */}
-        <div className="grid grid-cols-[2fr_1fr_1fr_1fr] bg-white font-semibold p-4 rounded">
-          <span>Product</span>
-          <span>Price</span>
-          <span>Quantity</span>
-          <span>Subtotal</span>
+        <div className="grid grid-cols-[2fr_1fr_1fr_1fr] gap-1 bg-white font-semibold p-4 rounded">
+          <span className="text-[12px] lg:text-[20px] " >Product</span>
+          <span className="text-[12px] lg:text-[20px] " >Price</span>
+          <span className="text-[12px] lg:text-[20px] " >Quantity</span>
+          <span className="text-[12px] lg:text-[20px] " >Subtotal</span>
         </div>
 
         {/* Cart items */}
@@ -38,7 +38,7 @@ const Cart = () => {
           {items.map((item) => (
             <div
               key={item.productId}
-              className="grid grid-cols-[2fr_1fr_1fr_1fr] items-center p-4 relative group"
+              className="grid grid-cols-[2fr_1fr_1fr_1fr] gap-1 items-center p-4 relative group"
             >
               {/* Product */}
               <div className="flex items-center gap-4 relative">
@@ -67,14 +67,14 @@ const Cart = () => {
               </div>
 
               {/* Quantity */}
-              <div className="flex py-[6px]  px-3 items-center border-[1.5px] border-[#00000066] rounded w-fit">
+              <div className="flex lg:py-[6px]  lg:px-3 items-center lg:border-[1.5px] lg:border-[#00000066] rounded w-fit">
                 {/* Number */}
                 <span className=" text-[10px] md:text-base font-medium min-w-[24px] text-center">
                   {String(item.quantity).padStart(2, "0")}
                 </span>
 
                 {/* Vertical buttons */}
-                <div className="flex gap-[5px] flex-col border-l">
+                <div className="flex gap-[5px] flex-col ">
                   <button
                     onClick={() =>
                       dispatch(
